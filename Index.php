@@ -33,8 +33,9 @@ $error="";
 	<title>Login Page</title>
 </head>
 <body>
+<center>
 <h1>Login</h1>
-<center><form action="" method="post">
+<form action="" method="post">
 	<table>
 		</th>
 		<tr>
