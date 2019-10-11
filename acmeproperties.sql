@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Host: 127.0.0.1
--- Generation Time: Oct 08, 2019 at 03:58 PM
+-- Generation Time: Oct 11, 2019 at 11:39 AM
 -- Server version: 5.7.14
 -- PHP Version: 5.6.25
 
@@ -29,9 +29,26 @@ SET time_zone = "+00:00";
 CREATE TABLE `calculations` (
   `CalculationsID` int(11) NOT NULL,
   `Name` varchar(40) NOT NULL,
-  `Surname` varchar(40) NOT NULL,
+  `Purchase_Price` int(11) NOT NULL,
+  `Deposit_Paid` int(11) NOT NULL,
+  `Bond_Term_In_Years` int(11) NOT NULL,
+  `Fixed_Interest_Rate` int(11) NOT NULL,
   `Calculation_Results` int(11) NOT NULL
 ) ENGINE=MyISAM DEFAULT CHARSET=latin1;
+
+--
+-- Dumping data for table `calculations`
+--
+
+INSERT INTO `calculations` (`CalculationsID`, `Name`, `Purchase_Price`, `Deposit_Paid`, `Bond_Term_In_Years`, `Fixed_Interest_Rate`, `Calculation_Results`) VALUES
+(5, '', 500, 34, 1, 6, 76),
+(6, 'Chief Sales Officer', 500, 1, 6, 1, 499),
+(4, 'Jones', 500, 200, 6, 6, 76),
+(7, 'Account Type To Customer', 500, 200, 1, 6, 300),
+(8, 'Sales Strategy Manager', 1, 200, 6, 6, -199),
+(9, 'Jones', 500, 200, 6, 6, 34),
+(10, 'Jones', 500, 200, 6, 6, 34),
+(11, 'Jones', 500, 1, 6, 6, 57);
 
 -- --------------------------------------------------------
 
@@ -77,7 +94,7 @@ ALTER TABLE `users`
 -- AUTO_INCREMENT for table `calculations`
 --
 ALTER TABLE `calculations`
-  MODIFY `CalculationsID` int(11) NOT NULL AUTO_INCREMENT;
+  MODIFY `CalculationsID` int(11) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=12;
 --
 -- AUTO_INCREMENT for table `users`
 --

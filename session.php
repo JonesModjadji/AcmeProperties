@@ -7,6 +7,6 @@
    $ses_sql = mysqli_query($con,"select username from admin where username = '$user_check' ");
    
    if(!isset($_SESSION['login_user'])){
-      header("location:login.php");
+      header("location:Index.php");
    }
 ?>

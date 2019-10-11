@@ -27,7 +27,7 @@ $error="";
 			 $result = mysqli_query($con,$sql);
 			 if($result){
 				 $error = "Password Successfully updated";
-				 header("location: Login.php");
+				 header("location: Index.php");
 			 }
 		}
 		else
