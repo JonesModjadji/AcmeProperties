@@ -34,7 +34,7 @@ $error="";
 </head>
 <body>
 <h1>Login</h1>
-<form action="" method="post">
+<center><form action="" method="post">
 	<table>
 		</th>
 		<tr>
@@ -58,6 +58,6 @@ $error="";
 	<input style="color: #524719;" type="submit" name="Login" value="Login">
 	</tr>
 	
-</form>
+</form></center>
 </body>
 </html>
